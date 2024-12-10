@@ -1,0 +1,42 @@
+﻿@model Account
+    <div class="form-box signup">
+        <div class="form-details">
+            <h2>Create Account</h2>
+            <p>To become a part of our community, please sign up using your personal information.</p>
+        </div>
+        <div class="form-content">
+            <h2>SIGNUP</h2>
+        <form asp-action="regestraion">
+            <div>
+                <label class="form-label m-0" style="font-size : 20px">User Name</label>
+                <input class="form-control" style="width:650px" type="text" required asp-for="Name">
+            </div>
+            <div>
+                <label class="form-label m-0" style="font-size : 20px">Email Address</label>
+                <input class="form-control" style="width:650px" type="text" required asp-for="Email">
+            </div>
+            <div>
+                <label class="form-label m-0" style="font-size : 20px">Password</label>
+                <input class="form-control" style="width:650px" type="password" required asp-for="Password">
+            </div>
+            <div>
+                <label class="form-label m-0" style="font-size : 20px">Confirm Password</label>
+                <input class="form-control" style="width:650px" type=" password" required name="password">
+            </div>
+            <div>
+                <label class="form-label m-0" style="font-size : 20px">Phone</label>
+                <input class="form-control" style="width:650px" type="text" required asp-for="Phone">
+            </div>
+            <div class="form-check form-switch" style="padding-top:10px">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
+                <label class="form-check-label" for="flexSwitchCheckChecked">Terms & Conditions</label>
+            </div>
+
+            <button class="btn-dark" type="submit">Sign Up</button>
+            </form>
+            <div class="bottom-link">
+                Already have an account?
+            <a href="~/Home/Index" id="login-link">Login</a>
+            </div>
+        </div>
+    </div>

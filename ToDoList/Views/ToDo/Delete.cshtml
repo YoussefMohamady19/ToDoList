@@ -1,0 +1,30 @@
+﻿@model Mission
+<div class="form-content">
+    <h2>Delete  Mission</h2>
+    <form asp-action="CheckCreate" asp-route-Id="@ViewData["id"]">
+        <div>
+
+            <label class="form-label m-0" style="font-size : 20px">Name</label>
+            <input asp-for=Name class="form-control" style="width:650px" type="text" disabled class="form-control">
+        </div>
+        <div>
+            <label class="form-label m-0" style="font-size : 20px">Content</label>
+            <input asp-for="Content" class="form-control" style="width:650px;height:100px" type="text" disabled class="form-control" >
+        </div>
+        <div>
+            <label class="form-label m-0" style="font-size : 20px">Expect Time</label>
+            <input asp-for=Date class="form-control" style="width:650px" type="datetime" disabled class="form-control">
+        </div>
+        <div>
+            <label class="form-label m-0" style="font-size : 20px">Notes</label>
+            <input asp-for=Note class="form-control" style="width:650px" type="text" disabled class="form-control">
+        </div>
+        <br />
+        <div class="d-grid gap-2">
+            <button class="btn-dark" style="width:650px;height:40px;text-align: center;font-size:18px" type="submit">Delete</button>
+
+        </div>
+    </form>
+    <br />
+    <a asp-action="Mission" class="btn btn-dark" style="width:650px;text-align: center;font-size:18px" type="text">Back to Missions</a>
+</div>
